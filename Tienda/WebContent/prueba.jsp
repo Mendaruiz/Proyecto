@@ -794,6 +794,7 @@ Usage: data-block-bg-img="IMAGE-URL" to apply a background image clearly via jQu
               <li><a href="#">Terms</a></li>
               <li><a href="#">Privacy</a></li>
               <li><a href="#">Contact Us</a></li>
+              <li><a href="loginAdmin.jsp">Login Admin</a>
             </ul>
           </div>
         </div>

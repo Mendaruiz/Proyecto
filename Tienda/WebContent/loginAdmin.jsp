@@ -4,7 +4,7 @@
 <html lang="es">
   <head>
     <meta charset="utf-8">
-    <title>Login</title>
+    <title>Login- Admin</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -79,16 +79,16 @@
             <div class="panel panel-default">
               <div class="panel-heading">
                 <h3 class="panel-title">
-                  Login
+                  Login Admin
                 </h3>
               </div>
               <div class="panel-body">
-                <form action="Clientes?operacion=login" method="post" role="form"accept-charset="UTF-8" role="form">
+                <form action="Clientes?operacion=admin" method="post" role="form"accept-charset="UTF-8" role="form">
                   <fieldset>
                     <div class="form-group">
                       <div class="input-group input-group-lg">
                         <span class="input-group-addon"><i class="fa fa-fw fa-user"></i></span>
-                        <input type="text" class="form-control" placeholder="Nickname" name="nombre_usuario" required>
+                        <input type="text" class="form-control" placeholder="Nickname" name="admin" required>
                       </div>
                     </div>
                     <div class="form-group">
@@ -106,7 +106,6 @@
                     <input class="btn btn-lg btn-primary btn-block" type="submit" value="Login">
                   </fieldset>
                 </form>
-                <p class="m-b-0 m-t">Not signed up? <a href="register.html">Sign up here</a>.</p>
                 <div class="credits">
                   <!-- 
                     All the links in the footer should remain intact. 

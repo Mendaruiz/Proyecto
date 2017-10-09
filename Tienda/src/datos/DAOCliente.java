@@ -56,6 +56,7 @@ public class DAOCliente implements I_DAOCliente {
         }
 		return devuelta;
 	}
+	
 
 	@Override
 	public Cliente getClienteUserName(String cod) {

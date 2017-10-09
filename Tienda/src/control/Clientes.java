@@ -9,7 +9,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import beans.Admin;
 import beans.Cliente;
+import datos.DAOAdmin;
 import datos.DAOCliente;
 
 /**
@@ -44,6 +46,7 @@ public class Clientes extends HttpServlet {
 			}*/
 			operacion = request.getParameter("operacion");
 			DAOCliente op = new DAOCliente();
+			DAOAdmin ad = new DAOAdmin();
 			System.out.println("---- operacion: "+operacion);
 			
 			if(operacion.equals("alta")){
@@ -54,12 +57,11 @@ public class Clientes extends HttpServlet {
 				System.out.println("---------------------alta");
 				request.getSession().setAttribute("cliente", c);
 				response.sendRedirect("cliente/index.jsp");
-			}else if(operacion.equals("login")){
+			}
+			else if(operacion.equals("login")){
 				
 				String usuario = request.getParameter("nombre_usuario");
 				String contraseña = request.getParameter("contrasena");
-				
-				System.out.println(usuario + " " + contraseña);
 				
 				if(op.ComprobarLogin(usuario, contraseña)){
 					Cliente c = op.getClienteUserName(usuario);
@@ -68,6 +70,25 @@ public class Clientes extends HttpServlet {
 				}
 				else{
 					RequestDispatcher rd = request.getRequestDispatcher("/login.jsp");
+					rd.forward(request, response);
+				}
+			}
+			else if(operacion.equals("admin")){
+				
+				String usuario = request.getParameter("admin");
+				String contraseña = request.getParameter("contrasena");
+				
+				System.out.println(usuario + " " + contraseña);
+				
+				System.out.println();
+				if(ad.ComprobarLoginAdmin(usuario, contraseña)){
+					System.out.println("Entra");
+					Admin a = ad.getClienteUserName(usuario);
+					request.getSession().setAttribute("admin", a);
+					response.sendRedirect("admin/index.jsp");
+				}
+				else{
+					RequestDispatcher rd = request.getRequestDispatcher("/loginAdmin.jsp");
 					rd.forward(request, response);
 				}
 			}

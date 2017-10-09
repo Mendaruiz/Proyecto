@@ -2,7 +2,7 @@ package beans;
 
 public class Cliente implements java.io.Serializable{
 	
-	private String id_cliente;
+	private int id_cliente;
 	private String nombre_usuario;
 	private String nombre;
 	private String apellidos;
@@ -31,10 +31,10 @@ public class Cliente implements java.io.Serializable{
 		this.nombre = nombre;
 	}
 
-	public String getId_cliente() {
+	public int getId_cliente() {
 		return id_cliente;
 	}
-	public void setId_cliente(String id_cliente) {
+	public void setId_cliente(int id_cliente) {
 		this.id_cliente = id_cliente;
 	}
 	public String getNombre_usuario() {
