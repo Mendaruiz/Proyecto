@@ -4,11 +4,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Index</title>
+<title>Insert title here</title>
 </head>
 <body>
-		<a href="alta.jsp">Alta Usuario</a>
-		
-		<a href="Clientes?operacion=prueba">Prueba alta</a>
+	
+	<h4>cliente ${cliente.nombre}</h4>
+	
+	
 </body>
 </html>
