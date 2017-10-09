@@ -28,6 +28,7 @@ public class Clientes extends HttpServlet {
 		String operacion;
 		
 		try{
+			/* Funciona
 			operacion = request.getParameter("operacion");
 			DAOCliente op = new DAOCliente();
 			System.out.println("---- operacion: "+operacion);
@@ -40,8 +41,36 @@ public class Clientes extends HttpServlet {
 				System.out.println("---------------------alta");
 				RequestDispatcher rd = request.getRequestDispatcher("cliente.jsp");
                 rd.forward(request, response);
-			}
+			}*/
+			operacion = request.getParameter("operacion");
+			DAOCliente op = new DAOCliente();
+			System.out.println("---- operacion: "+operacion);
 			
+			if(operacion.equals("alta")){
+				Cliente c = recogerDatos(request);
+				op.Alta(c);
+				System.out.println(c.toString());
+				System.out.println("---- nombre: "+c.getNombre());
+				System.out.println("---------------------alta");
+				request.getSession().setAttribute("cliente", c);
+				response.sendRedirect("cliente/index.jsp");
+			}else if(operacion.equals("login")){
+				
+				String usuario = request.getParameter("nombre_usuario");
+				String contraseña = request.getParameter("contrasena");
+				
+				System.out.println(usuario + " " + contraseña);
+				
+				if(op.ComprobarLogin(usuario, contraseña)){
+					Cliente c = op.getClienteUserName(usuario);
+					request.getSession().setAttribute("cliente", c);
+					response.sendRedirect("cliente/index.jsp");
+				}
+				else{
+					RequestDispatcher rd = request.getRequestDispatcher("/login.jsp");
+					rd.forward(request, response);
+				}
+			}
 			
 			
 			
@@ -63,6 +92,7 @@ public class Clientes extends HttpServlet {
 		c.setApellidos(request.getParameter("apellidos"));
 		c.setCorreo(request.getParameter("correo"));
 		c.setDireccion(request.getParameter("direccion"));
+		c.setContraseña(request.getParameter("contrasena"));
 		return c;
 		
 		

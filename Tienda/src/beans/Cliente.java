@@ -8,17 +8,19 @@ public class Cliente implements java.io.Serializable{
 	private String apellidos;
 	private String correo;
 	private String direccion;
+	private String contraseña;
 	
 	public Cliente(){
 		
 	}
 	
-	public Cliente(String nombre_usuario, String nombre, String apellidos, String correo, String direccion) {
+	public Cliente(String nombre_usuario, String nombre, String apellidos, String correo, String direccion, String contraseña) {
 		this.nombre = nombre;
 		this.nombre_usuario = nombre_usuario;
 		this.apellidos = apellidos;
 		this.correo = correo;
 		this.direccion = direccion;
+		this.contraseña = contraseña;
 	}
 	
 	public String getNombre() {
@@ -60,7 +62,15 @@ public class Cliente implements java.io.Serializable{
 		this.direccion = direccion;
 	}
 
+	public String getContraseña() {
+		return contraseña;
+	}
 
+	public void setContraseña(String contraseña) {
+		this.contraseña = contraseña;
+	}
+
+	
 	@Override
 	public String toString() {
 		return "Cliente [id_cliente=" + id_cliente + ", nombre_usuario=" + nombre_usuario + ", nombre=" + nombre

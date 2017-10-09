@@ -7,8 +7,11 @@
 <title>Index</title>
 </head>
 <body>
-		<a href="alta.jsp">Alta Usuario</a>
-		
-		<a href="Clientes?operacion=prueba">Prueba alta</a>
+	
+	<a href="alta.jsp">Dar de Alta</a>
+	<br>
+	<a href="prueba.jsp">Prueba </a>
+	
+	
 </body>
 </html>

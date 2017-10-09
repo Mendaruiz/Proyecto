@@ -7,8 +7,32 @@
 <title>Insert title here</title>
 </head>
 <body>
-	
-	<h4>cliente ${cliente.nombre}</h4>
+	<div id="contenedor">
+            <h2>Bienvenido Cliente ${cliente.nombre_usuario}</h2>
+            <div id="body">        
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>NOMBRE</th>
+                            <th>APELLIDOS</th>
+                            <th>CORREO</th>
+                            <th>DIRECCION</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    	<tr>
+                    		<td>${cliente.nombre} </td>
+                    		<td>${cliente.apellidos} </td>
+                    		<td>${cliente.correo} </td>
+                    		<td>${cliente.direccion} </td>
+                    	</tr>
+                    </tbody>
+                </table>
+
+                <br/>
+                <br/>
+            </div>
+        </div>
 	
 	
 </body>
