@@ -15,13 +15,13 @@ public class DAOCliente implements I_DAOCliente{
 		
 	}
 	
-	public void Baja(String cod){
+	public void Baja(String nombre_usuario){
 		Statement st = null;
         try {
-            System.out.println("--- Dando de baja el cliente " + cod);
+            System.out.println("--- Dando de baja el cliente " + nombre_usuario);
             ConexionDB con = new ConexionDB();
             st = con.getConnection().createStatement();
-            String q = "delete from cliente where nombre_usuario ='" + cod + "'";
+            String q = "delete from cliente where nombre_usuario ='" + nombre_usuario + "'";
 
             int i = st.executeUpdate(q);
             System.out.println(q + i);

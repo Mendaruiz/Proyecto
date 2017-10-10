@@ -6,7 +6,7 @@ public class ConexionDB {
 
     Connection con = null;
     String driverClassName = "com.mysql.jdbc.Driver";
-    String driverUrl = "jdbc:mysql://localhost/tienda";
+    String driverUrl = "jdbc:mysql://localhost:3306/tienda";
     String user = "root";
     String password = "1111";
 
@@ -14,7 +14,6 @@ public class ConexionDB {
         try {
            Class.forName(driverClassName);
            con = DriverManager.getConnection(driverUrl, user, password);
-           System.out.println("Conectado a la base de datos");
            
         } catch (ClassNotFoundException e) {
             System.out.println("No se encuentra el driver");
