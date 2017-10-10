@@ -4,17 +4,18 @@ import java.sql.*;
 
 public class ConexionDB {
 
-    Connection connection = null;
-    String BD = "tienda";
+    Connection con = null;
     String driverClassName = "com.mysql.jdbc.Driver";
-    String driverUrl = "jdbc:mysql:///" + BD;
+    String driverUrl = "jdbc:mysql://localhost/tienda";
     String user = "root";
     String password = "1111";
 
     public ConexionDB() {
         try {
-            Class.forName(driverClassName);
-            connection = DriverManager.getConnection(driverUrl, user, password);
+           Class.forName(driverClassName);
+           con = DriverManager.getConnection(driverUrl, user, password);
+           System.out.println("Conectado a la base de datos");
+           
         } catch (ClassNotFoundException e) {
             System.out.println("No se encuentra el driver");
         } catch (SQLException E) {
@@ -27,13 +28,13 @@ public class ConexionDB {
     }
 
     public Connection getConnection() {
-        return connection;
+        return con;
     }
 
     public void desconectar() {
         try {
-            connection.close();
-            connection = null;
+            con.close();
+            con = null;
         } catch (Exception e) {
             e.printStackTrace();
         }

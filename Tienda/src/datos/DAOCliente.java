@@ -1,5 +1,6 @@
 package datos;
 
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.logging.Level;
@@ -20,7 +21,7 @@ public class DAOCliente implements I_DAOCliente{
             System.out.println("--- Dando de baja el cliente " + cod);
             ConexionDB con = new ConexionDB();
             st = con.getConnection().createStatement();
-            String q = "delete from cliente where code ='" + cod + "'";
+            String q = "delete from cliente where nombre_usuario ='" + cod + "'";
 
             int i = st.executeUpdate(q);
             System.out.println(q + i);
@@ -29,6 +30,5 @@ public class DAOCliente implements I_DAOCliente{
         } catch (SQLException ex) {
             Logger.getLogger(DAOCliente.class.getName()).log(Level.SEVERE, null, ex);
         }
-
 	}
 }
