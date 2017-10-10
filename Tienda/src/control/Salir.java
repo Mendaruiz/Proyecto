@@ -1,4 +1,4 @@
-package Model;
+package control;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -8,16 +8,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class Prueba
+ * Servlet implementation class Salir
  */
-@WebServlet("/Prueba")
-public class Prueba extends HttpServlet {
+@WebServlet("/Salir")
+public class Salir extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public Prueba() {
+    public Salir() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -27,7 +27,9 @@ public class Prueba extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		request.getSession().invalidate();
+        
+        response.sendRedirect("index.jsp");
 	}
 
 	/**
