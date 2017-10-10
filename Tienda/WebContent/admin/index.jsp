@@ -2,7 +2,7 @@
 <html lang="es">
   <head>
     <meta charset="utf-8">
-    <title>Cliente</title>
+    <title>Admin</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -111,6 +111,7 @@
             </div>
           </div>
         </div>
+        
         <!--Header & navbar-branding region-->
         <div class="header">
           <div class="header-inner container">
@@ -119,7 +120,7 @@
                 <!--navbar-branding/logo - hidden image tag & site name so things like Facebook to pick up, actual logo set via CSS for flexibility -->
                 <a class="navbar-brand" href="../admin/index.jsp" title="Home">
                   <h1 class="hidden">
-                    <img src="img/logo.png" alt="Flexor Logo">
+                    <img src="../lib/img/logo.png" alt="Flexor Logo">
                     Flexor
                   </h1>
                 </a>
@@ -135,7 +136,6 @@
                 <ul class="list-inline user-menu pull-right">
                   <li class="hidden-xs"><i class="fa fa-edit text-primary"></i>${admin.admin}</li>
                   <li class="hidden-xs"><i class="fa fa-sign-in text-primary"></i> <a href="../Salir" class="text-uppercase">Sign out</a></li>
-                  <li><a class="btn btn-primary btn-hh-trigger" role="button" data-toggle="collapse" data-target=".header-hidden">Open</a></li>
                 </ul>
               </div>
             </div>
@@ -157,17 +157,15 @@
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav" id="main-menu">
                 <li class="icon-link">
-                  <a href="../cliente/index.jsp"><i class="fa fa-home"></i></a>
+                  <a href="../admin/index.jsp"><i class="fa fa-home"></i></a>
                 </li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages<b class="caret"></b></a>
                   <!-- Dropdown Menu -->
                   <ul class="dropdown-menu">
                     <li class="dropdown-header">Flexor Version Pages</li>
-                    <li><a href="elements.html" tabindex="-1" class="menu-item">Elements</a></li>
+                    <li><a href="elements.html" tabindex="-1" class="menu-item">Add Article</a></li>
                     <li><a href="about.html" tabindex="-1" class="menu-item">About / Inner Page</a></li>
-                    <li><a href="login.html" tabindex="-1" class="menu-item">Login</a></li>
-                    <li><a href="register.html" tabindex="-1" class="menu-item">Sign-Up</a></li>
                     <li class="dropdown-footer">Dropdown footer</li>
                   </ul>
                 </li>
@@ -303,22 +301,22 @@ Usage: data-block-bg-img="IMAGE-URL" to apply a background image clearly via jQu
     </footer>
     
     <!-- Required JavaScript Libraries -->
-    <script src="lib/jquery/jquery.min.js"></script>
-    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/stellar/stellar.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="contactform/contactform.js"></script>
+    <script src="../lib/jquery/jquery.min.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="../lib/stellar/stellar.min.js"></script>
+    <script src="../llib/waypoints/waypoints.min.js"></script>
+    <script src="../lb/counterup/counterup.min.js"></script>
+    <script src="../lib/contactform/contactform.js"></script>
     
     <!-- Template Specisifc Custom Javascript File -->
-    <script src="js/custom.js"></script>
+    <script src="../lib/js/custom.js"></script>
     
     <!--Custom scripts demo background & colour switcher - OPTIONAL -->
-    <script src="js/color-switcher.js"></script>
+    <script src="../lib/js/color-switcher.js"></script>
     
     <!--Contactform script -->
-    <script src="contactform/contactform.js"></script>
+    <script src="../lib/contactform/contactform.js"></script>
     <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)

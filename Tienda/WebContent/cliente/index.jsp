@@ -119,7 +119,7 @@
                 <!--navbar-branding/logo - hidden image tag & site name so things like Facebook to pick up, actual logo set via CSS for flexibility -->
                 <a class="navbar-brand" href="../cliente/index.jsp" title="Home">
                   <h1 class="hidden">
-                    <img src="img/logo.png" alt="Flexor Logo">
+                    <img src="../lib/img/logo.png" alt="Flexor Logo">
                     Flexor
                   </h1>
                 </a>
@@ -303,22 +303,22 @@ Usage: data-block-bg-img="IMAGE-URL" to apply a background image clearly via jQu
     </footer>
     
     <!-- Required JavaScript Libraries -->
-    <script src="lib/jquery/jquery.min.js"></script>
-    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/stellar/stellar.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="contactform/contactform.js"></script>
+    <script src="../lib/jquery/jquery.min.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="../lib/stellar/stellar.min.js"></script>
+    <script src="../lib/waypoints/waypoints.min.js"></script>
+    <script src="../lib/counterup/counterup.min.js"></script>
+    <script src="../lib/contactform/contactform.js"></script>
     
     <!-- Template Specisifc Custom Javascript File -->
-    <script src="js/custom.js"></script>
+    <script src="../lib/js/custom.js"></script>
     
     <!--Custom scripts demo background & colour switcher - OPTIONAL -->
-    <script src="js/color-switcher.js"></script>
+    <script src="../lib/js/color-switcher.js"></script>
     
     <!--Contactform script -->
-    <script src="contactform/contactform.js"></script>
+    <script src="../lib/contactform/contactform.js"></script>
     <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
