@@ -1,8 +1,11 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="utf-8">
-    <title>Admin</title>
+    <title>Productos</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -23,24 +26,24 @@
 
     <!-- Fav and touch icons -->
     <link rel="shortcut icon" href="img/icons/favicon.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../img/icons/114x114.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../img/icons/72x72.png">
-    <link rel="apple-touch-icon-precomposed" href="../img/icons/default.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/icons/114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/icons/72x72.png">
+    <link rel="apple-touch-icon-precomposed" href="img/icons/default.png">
   
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900" rel="stylesheet">
     
     <!-- Bootstrap CSS File -->
-    <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   
     <!-- Libraries CSS Files -->
-    <link href="../lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="../lib/owlcarousel/owl.carousel.min.css" rel="stylesheet">
-    <link href="../lib/owlcarousel/owl.theme.min.css" rel="stylesheet">
-    <link href="../lib/owlcarousel/owl.transitions.min.css" rel="stylesheet">
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/owl.theme.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/owl.transitions.min.css" rel="stylesheet">
     
     <!-- Main Stylesheet File -->
-    <link href="../css/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     
     <!--Your custom colour override - predefined colours are: colour-blue.css, colour-green.css, colour-lavander.css, orange is default-->
     <link href="#" id="colour-scheme" rel="stylesheet">
@@ -67,9 +70,9 @@
             <div class="row">
               <div class="col-md-8">
                 <!--navbar-branding/logo - hidden image tag & site name so things like Facebook to pick up, actual logo set via CSS for flexibility -->
-                <a class="navbar-brand" href="../admin/index.jsp" title="Home">
+                <a class="navbar-brand" href="index.jsp" title="Home">
                   <h1 class="hidden">
-                    <img src="../lib/img/logo.png" alt="Flexor Logo">
+                    <img src="lib/img/logo.png" alt="Flexor Logo">
                     Flexor
                   </h1>
                 </a>
@@ -83,14 +86,17 @@
               <div class="col-md-4">
                 <!--user menu-->
                 <ul class="list-inline user-menu pull-right">
-                  <li class="hidden-xs"><i class="fa fa-edit text-primary"></i>${admin.admin}</li>
-                  <li class="hidden-xs"><i class="fa fa-sign-in text-primary"></i> <a href="../Salir" class="text-uppercase">Sign out</a></li>
+                  <li class="hidden-xs"><i class="fa fa-edit text-primary"></i><a href="register.jsp" class="text-uppercase">Register</a></li>
+                  <li class="hidden-xs"><i class="fa fa-sign-in text-primary"></i> <a href="login.jsp" class="text-uppercase">Login</a></li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
         <div class="container">
+        
+        
+        
           <div class="navbar navbar-default">
             <!--mobile collapse menu button-->
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
@@ -106,15 +112,17 @@
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav" id="main-menu">
                 <li class="icon-link">
-                  <a href="../admin/index.jsp"><i class="fa fa-home"></i></a>
+                  <a href="index.jsp"><i class="fa fa-home"></i></a>
                 </li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages<b class="caret"></b></a>
                   <!-- Dropdown Menu -->
                   <ul class="dropdown-menu">
                     <li class="dropdown-header">Flexor Version Pages</li>
-                    <li><a href="../admin/altaArticulo.jsp" tabindex="-1" class="menu-item">Add Article</a></li>
-                    <li><a href="../Productos?operacion=listado" tabindex="-1" class="menu-item">List Articles</a></li>
+                    <li><a href="Productos?operacion=listado" tabindex="-1" class="menu-item">Productos</a></li>
+                    <li><a href="Productos?operacion=listadoNuevos" tabindex="-1" class="menu-item">Ultimos Prodcutos</a></li>
+                    <li><a href="login.jsp" tabindex="-1" class="menu-item">Login</a></li>
+                    <li><a href="register.jsp" tabindex="-1" class="menu-item">Sign-Up</a></li>
                     <li class="dropdown-footer">Dropdown footer</li>
                   </ul>
                 </li>
@@ -150,6 +158,7 @@
                 </li>
               </ul>
             </div>
+            
             <!--/.navbar-collapse -->
           </div>
         </div>
@@ -170,12 +179,45 @@
       <div class="showcase block block-border-bottom-grey">
         <div class="container">
           <h2 class="block-title">
-            Showcase
+            Productos ${listado}
           </h2>
           <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.</p>
-          <div class="item-carousel" data-toggle="owlcarousel" data-owlcarousel-settings='{"items":4, "pagination":false, "navigation":true, "itemsScaleUp":true}'>
             
-          </div>
+        
+        </div>
+        <div class="well well-sm">
+	        <strong>Category Title</strong>
+	        <div class="btn-group">
+	            <a href="#" id="list" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-th-list">
+	            </span>List</a> <a href="#" id="grid" class="btn btn-default btn-sm">
+	            <spanclass="glyphicon glyphicon-th"></span>Grid</a>
+	        </div>
+    	</div>
+    	<div id="products" class="row list-group">
+    	
+    	<c:forEach var="producto" items="${productos}">
+	        <div class="item  col-xs-4 col-lg-4">
+	            <div class="thumbnail">
+	                <img class="group list-group-image" src="img/showcase/project12.png" alt="" />
+	                <div class="caption">
+	                    <h4 class="group inner list-group-item-heading">
+	                        ${producto.nombre}</h4>
+	                    <p class="group inner list-group-item-text">
+	                        ${producto.descripcion}</p>
+	                    <div class="row">
+	                        <div class="col-xs-12 col-md-6">
+	                            <p class="lead">
+	                                ${producto.precio} €</p>
+	                        </div>
+	                        <div class="col-xs-12 col-md-6">
+	                            <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+            </div>
+	        
+        </c:forEach>
         </div>
       </div>   
       <!--
@@ -224,7 +266,7 @@ Usage: data-block-bg-img="IMAGE-URL" to apply a background image clearly via jQu
         <div class="row subfooter">
           <!--@todo: replace with company copyright details-->
           <div class="col-md-7">
-            <p>Copyright � Flexor Theme</p>
+            <p>Copyright © Flexor Theme</p>
             <div class="credits">
               <!-- 
                 All the links in the footer should remain intact. 
@@ -250,22 +292,27 @@ Usage: data-block-bg-img="IMAGE-URL" to apply a background image clearly via jQu
     </footer>
     
     <!-- Required JavaScript Libraries -->
-    <script src="../lib/jquery/jquery.min.js"></script>
-    <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
-    <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="../lib/stellar/stellar.min.js"></script>
-    <script src="../llib/waypoints/waypoints.min.js"></script>
-    <script src="../lb/counterup/counterup.min.js"></script>
-    <script src="../lib/contactform/contactform.js"></script>
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/stellar/stellar.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/contactform/contactform.js"></script>
     
     <!-- Template Specisifc Custom Javascript File -->
-    <script src="../lib/js/custom.js"></script>
+    <script src="lib/js/custom.js"></script>
     
     <!--Custom scripts demo background & colour switcher - OPTIONAL -->
-    <script src="../lib/js/color-switcher.js"></script>
+    <script src="lib/js/color-switcher.js"></script>
     
     <!--Contactform script -->
-    <script src="../lib/contactform/contactform.js"></script>
+    <script type="text/javascript">
+	    $(document).ready(function() {
+	        $('#list').click(function(event){event.preventDefault();$('#products .item').addClass('list-group-item');});
+	        $('#grid').click(function(event){event.preventDefault();$('#products .item').removeClass('list-group-item');$('#products .item').addClass('grid-group-item');});
+	    });    </script>
+    <script src="lib/contactform/contactform.js"></script>
     <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
