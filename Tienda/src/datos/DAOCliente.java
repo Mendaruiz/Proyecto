@@ -28,7 +28,20 @@ public class DAOCliente implements I_DAOCliente {
 
 	@Override
 	public void Baja(String cod) {
-		// TODO Auto-generated method stub
+		Statement st = null;
+        try {
+            System.out.println("--- Dando de baja el cliente " + cod);
+            ConexionDB con = new ConexionDB();
+            st = con.getConnection().createStatement();
+            String q = "delete from cliente where nombre_usuario ='" + cod + "'";
+
+            int i = st.executeUpdate(q);
+            System.out.println(q + i);
+            con.getConnection().close();
+
+        } catch (SQLException ex) {
+            Logger.getLogger(DAOCliente.class.getName()).log(Level.SEVERE, null, ex);
+        }
 
 	}
 

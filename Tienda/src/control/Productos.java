@@ -65,7 +65,7 @@ public class Productos extends HttpServlet {
 					System.out.println("Lista");
 					System.out.println(listNuevos.get(i).toString());
 				}
-				request.setAttribute("listado", "Nuevos");
+				request.setAttribute("nuevos", "Nuevos");
 				request.setAttribute("productos", listNuevos);
 				RequestDispatcher view = request.getRequestDispatcher("/listado.jsp");
 				view.forward(request, response);

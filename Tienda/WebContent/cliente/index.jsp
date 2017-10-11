@@ -135,7 +135,7 @@
                 <ul class="list-inline user-menu pull-right">
                   <li class="hidden-xs"><i class="fa fa-edit text-primary"></i>${cliente.nombre_usuario}</li>
                   <li class="hidden-xs"><i class="fa fa-sign-in text-primary"></i> <a href="../Salir" class="text-uppercase">Sign out</a></li>
-                  <li><a class="btn btn-primary btn-hh-trigger" role="button" data-toggle="collapse" data-target=".header-hidden">Open</a></li>
+                  <li class="hidden-xs"><i class="fa fa-sign-in text-primary"></i> <a href="../Clientes?operacion=baja" class="text-uppercase">Dar de baja</a></li>
                 </ul>
               </div>
             </div>
