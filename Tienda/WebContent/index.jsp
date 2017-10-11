@@ -167,9 +167,13 @@
                   <ul class="dropdown-menu">
                     <li class="dropdown-header">Flexor Version Pages</li>
                     
-                    //AQUÍ
                     
-                    <li><a href="listado_temporal.jsp" tabindex="-1" class="menu-item">Listado</a></li>
+                    
+                    <!-- AQUÍ ESTÁ INCLUIDO EL LISTADO -->
+                    
+                    
+                    <li><a href="Productos?operacion=listado" tabindex="-1" class="menu-item">Listado</a></li>
+                    <li><a href="Productos?operacion=listadoNuevos" tabindex="-1" class="menu-item">Listado de los más recientes</a></li>
                     <li><a href="about.html" tabindex="-1" class="menu-item">About / Inner Page</a></li>
                     <li><a href="login.html" tabindex="-1" class="menu-item">Login</a></li>
                     <li><a href="register.html" tabindex="-1" class="menu-item">Sign-Up</a></li>

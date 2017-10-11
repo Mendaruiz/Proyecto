@@ -34,6 +34,17 @@ public class Productos extends HttpServlet {
 				RequestDispatcher view = request.getRequestDispatcher("/listado.jsp");
 				view.forward(request, response);
 			}
+			
+			if(operacion.equals("listadoNuevos")){
+				List<Producto> listNuevos = op.ListadoNuevos();
+				for(int i = 0; i < listNuevos.size(); i++){
+					System.out.println("Lista");
+					System.out.println(listNuevos.get(i).toString());
+				}
+				request.setAttribute("productos", listNuevos);
+				RequestDispatcher view = request.getRequestDispatcher("/listadoNuevos.jsp");
+				view.forward(request, response);
+			}
 		} catch (Exception e){
 			System.out.println("--------------------  FALLO  -----------------------------");
 			e.printStackTrace();
