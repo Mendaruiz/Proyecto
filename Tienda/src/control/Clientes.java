@@ -91,6 +91,13 @@ public class Clientes extends HttpServlet {
 					RequestDispatcher rd = request.getRequestDispatcher("/loginAdmin.jsp");
 					rd.forward(request, response);
 				}
+			} else if (operacion.equals("baja")){
+				Cliente c = (Cliente) request.getSession().getAttribute("cliente");
+				String cod = c.getNombre_usuario();
+				op.Baja(cod);
+				request.getSession().invalidate();
+				request.setAttribute("msg", "El cliente con nombre de usuario "+cod+ " se ha dado de baja correctamente" );
+				request.getRequestDispatcher("baja.jsp").forward(request, response);
 			}
 			
 			

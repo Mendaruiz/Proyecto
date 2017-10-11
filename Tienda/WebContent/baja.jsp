@@ -1,11 +1,8 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="utf-8">
-    <title>Productos</title>
+    <title>Cliente</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -63,14 +60,64 @@
       <!-- ======== @Region: #navigation ======== -->
       <div id="navigation" class="wrapper">
         <!--Hidden Header Region-->
-        
+        <div class="header-hidden collapse">
+          <div class="header-hidden-inner container">
+            <div class="row">
+              <div class="col-md-3">
+                <h3>
+                  About Us
+                </h3>
+                <p>Flexor is a super flexible responsive theme with a modest design touch.</p>
+                <a href="about.html" class="btn btn-more"><i class="fa fa-plus"></i> Learn more</a>
+              </div>
+              <div class="col-md-3">
+                <!--@todo: replace with company contact details-->
+                <h3>
+                  Contact Us
+                </h3>
+                <address>
+                  <strong>Flexor Bootstrap Theme Inc</strong> 
+                  <abbr title="Address"><i class="fa fa-pushpin"></i></abbr>
+                  Sunshine House, Sunville. SUN12 8LU.
+                  <br>
+                  <abbr title="Phone"><i class="fa fa-phone"></i></abbr>
+                  019223 8092344
+                  <br>
+                  <abbr title="Email"><i class="fa fa-envelope-alt"></i></abbr>
+                  info@flexorinc.com 
+                </address>
+              </div>
+              <div class="col-md-6">
+                <!--Colour & Background Switch for demo - @todo: remove in production-->
+                <h3>
+                  Theme Variations 
+                </h3>
+                <div class="switcher">
+                  <div class="cols">
+                    Backgrounds:
+                    <br>
+                    <a href="#benches" class="background benches active" title="Benches">Benches</a> <a href="#boots" class="background boots " title="Boots">Boots</a> <a href="#buildings" class="background buildings " title="Buildings">Buildings</a> <a href="#city" class="background city " title="City">City</a> <a href="#metro" class="background metro " title="Metro">Metro</a> 
+                  </div>
+                  <div class="cols">
+                    Colours:
+                    <br>
+                    <a href="#orange" class="colour orange active" title="Orange">Orange</a> <a href="#green" class="colour green " title="Green">Green</a> <a href="#blue" class="colour blue " title="Blue">Blue</a> <a href="#lavender" class="colour lavender " title="Lavender">Lavender</a> 
+                  </div>
+                </div>
+                <p>
+                  <small>Selection is not persistent.</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
         <!--Header & navbar-branding region-->
         <div class="header">
           <div class="header-inner container">
             <div class="row">
               <div class="col-md-8">
                 <!--navbar-branding/logo - hidden image tag & site name so things like Facebook to pick up, actual logo set via CSS for flexibility -->
-                <a class="navbar-brand" href="index.jsp" title="Home">
+                <a class="navbar-brand" href="cliente/index.jsp" title="Home">
                   <h1 class="hidden">
                     <img src="lib/img/logo.png" alt="Flexor Logo">
                     Flexor
@@ -86,17 +133,15 @@
               <div class="col-md-4">
                 <!--user menu-->
                 <ul class="list-inline user-menu pull-right">
-                  <li class="hidden-xs"><i class="fa fa-edit text-primary"></i><a href="register.jsp" class="text-uppercase">Register</a></li>
+                  <li class="hidden-xs"><i class="fa fa-edit text-primary"></i> <a href="register.jsp" class="text-uppercase">Register</a></li>
                   <li class="hidden-xs"><i class="fa fa-sign-in text-primary"></i> <a href="login.jsp" class="text-uppercase">Login</a></li>
+                  <li><a class="btn btn-primary btn-hh-trigger" role="button" data-toggle="collapse" data-target=".header-hidden">Open</a></li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
         <div class="container">
-        
-        
-        
           <div class="navbar navbar-default">
             <!--mobile collapse menu button-->
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
@@ -112,17 +157,17 @@
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav" id="main-menu">
                 <li class="icon-link">
-                  <a href="index.jsp"><i class="fa fa-home"></i></a>
+                  <a href="cliente/index.jsp"><i class="fa fa-home"></i></a>
                 </li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages<b class="caret"></b></a>
                   <!-- Dropdown Menu -->
                   <ul class="dropdown-menu">
                     <li class="dropdown-header">Flexor Version Pages</li>
-                    <li><a href="Productos?operacion=listado" tabindex="-1" class="menu-item">Productos</a></li>
-                    <li><a href="Productos?operacion=listadoNuevos" tabindex="-1" class="menu-item">Ultimos Prodcutos</a></li>
-                    <li><a href="login.jsp" tabindex="-1" class="menu-item">Login</a></li>
-                    <li><a href="register.jsp" tabindex="-1" class="menu-item">Sign-Up</a></li>
+                    <li><a href="elements.html" tabindex="-1" class="menu-item">Elements</a></li>
+                    <li><a href="about.html" tabindex="-1" class="menu-item">About / Inner Page</a></li>
+                    <li><a href="login.html" tabindex="-1" class="menu-item">Login</a></li>
+                    <li><a href="register.html" tabindex="-1" class="menu-item">Sign-Up</a></li>
                     <li class="dropdown-footer">Dropdown footer</li>
                   </ul>
                 </li>
@@ -158,7 +203,6 @@
                 </li>
               </ul>
             </div>
-            
             <!--/.navbar-collapse -->
           </div>
         </div>
@@ -179,45 +223,12 @@
       <div class="showcase block block-border-bottom-grey">
         <div class="container">
           <h2 class="block-title">
-            Productos ${nuevos}
+            ${msg}
           </h2>
           <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.</p>
+          <div class="item-carousel" data-toggle="owlcarousel" data-owlcarousel-settings='{"items":4, "pagination":false, "navigation":true, "itemsScaleUp":true}'>
             
-        
-        </div>
-        <div class="well well-sm">
-	        <strong>Category Title</strong>
-	        <div class="btn-group">
-	            <a href="#" id="list" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-th-list">
-	            </span>List</a> <a href="#" id="grid" class="btn btn-default btn-sm">
-	            <spanclass="glyphicon glyphicon-th"></span>Grid</a>
-	        </div>
-    	</div>
-    	<div id="products" class="row list-group">
-    	
-    	<c:forEach var="producto" items="${productos}">
-	        <div class="item  col-xs-4 col-lg-4">
-	            <div class="thumbnail">
-	                <img class="group list-group-image" src="img/showcase/project12.png" alt="" />
-	                <div class="caption">
-	                    <h4 class="group inner list-group-item-heading">
-	                        ${producto.nombre}</h4>
-	                    <p class="group inner list-group-item-text">
-	                        ${producto.descripcion}</p>
-	                    <div class="row">
-	                        <div class="col-xs-12 col-md-6">
-	                            <p class="lead">
-	                                ${producto.precio} €</p>
-	                        </div>
-	                        <div class="col-xs-12 col-md-6">
-	                            <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
-	                        </div>
-	                    </div>
-	                </div>
-	            </div>
-            </div>
-	        
-        </c:forEach>
+          </div>
         </div>
       </div>   
       <!--
@@ -266,7 +277,7 @@ Usage: data-block-bg-img="IMAGE-URL" to apply a background image clearly via jQu
         <div class="row subfooter">
           <!--@todo: replace with company copyright details-->
           <div class="col-md-7">
-            <p>Copyright © Flexor Theme</p>
+            <p>Copyright � Flexor Theme</p>
             <div class="credits">
               <!-- 
                 All the links in the footer should remain intact. 
@@ -307,11 +318,6 @@ Usage: data-block-bg-img="IMAGE-URL" to apply a background image clearly via jQu
     <script src="lib/js/color-switcher.js"></script>
     
     <!--Contactform script -->
-    <script type="text/javascript">
-	    $(document).ready(function() {
-	        $('#list').click(function(event){event.preventDefault();$('#products .item').addClass('list-group-item');});
-	        $('#grid').click(function(event){event.preventDefault();$('#products .item').removeClass('list-group-item');$('#products .item').addClass('grid-group-item');});
-	    });    </script>
     <script src="lib/contactform/contactform.js"></script>
     <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
