@@ -58,113 +58,7 @@
   
   <body class="page-index has-hero">
     <!--Change the background class to alter background image, options are: benches, boots, buildings, city, metro -->
-    <div id="background-wrapper" class="buildings" data-stellar-background-ratio="0.1">
-      
-      <!-- ======== @Region: #navigation ======== -->
-      <div id="navigation" class="wrapper">
-        <!--Hidden Header Region-->
-        
-        <!--Header & navbar-branding region-->
-        <div class="header">
-          <div class="header-inner container">
-            <div class="row">
-              <div class="col-md-8">
-                <!--navbar-branding/logo - hidden image tag & site name so things like Facebook to pick up, actual logo set via CSS for flexibility -->
-                <a class="navbar-brand" href="index.jsp" title="Home">
-                  <h1 class="hidden">
-                    <img src="lib/img/logo.png" alt="Flexor Logo">
-                    Flexor
-                  </h1>
-                </a>
-                <div class="navbar-slogan">
-                  Responsive HTML Theme
-                  <br>
-                  By BootstrapMade.com
-                </div>
-              </div>
-              <!--header rightside-->
-              <div class="col-md-4">
-                <!--user menu-->
-                <ul class="list-inline user-menu pull-right">
-                  <li class="hidden-xs"><i class="fa fa-edit text-primary"></i><a href="register.jsp" class="text-uppercase">Register</a></li>
-                  <li class="hidden-xs"><i class="fa fa-sign-in text-primary"></i> <a href="login.jsp" class="text-uppercase">Login</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="container">
-        
-        
-        
-          <div class="navbar navbar-default">
-            <!--mobile collapse menu button-->
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-            <!--social media icons-->
-            <div class="navbar-text social-media social-media-inline pull-right">
-              <!--@todo: replace with company social media details-->
-              <a href="#"><i class="fa fa-twitter"></i></a>
-              <a href="#"><i class="fa fa-facebook"></i></a>
-              <a href="#"><i class="fa fa-linkedin"></i></a>
-              <a href="#"><i class="fa fa-google-plus"></i></a>
-            </div>
-            <!--everything within this div is collapsed on mobile-->
-            <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav" id="main-menu">
-                <li class="icon-link">
-                  <a href="index.jsp"><i class="fa fa-home"></i></a>
-                </li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages<b class="caret"></b></a>
-                  <!-- Dropdown Menu -->
-                  <ul class="dropdown-menu">
-                    <li class="dropdown-header">Flexor Version Pages</li>
-                    <li><a href="Productos?operacion=listado" tabindex="-1" class="menu-item">Productos</a></li>
-                    <li><a href="Productos?operacion=listadoNuevos" tabindex="-1" class="menu-item">Ultimos Prodcutos</a></li>
-                    <li><a href="login.jsp" tabindex="-1" class="menu-item">Login</a></li>
-                    <li><a href="register.jsp" tabindex="-1" class="menu-item">Sign-Up</a></li>
-                    <li class="dropdown-footer">Dropdown footer</li>
-                  </ul>
-                </li>
-                <li><a href="#">Menu Link</a></li>
-                <li class="dropdown dropdown-mm">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mega Menu<b class="caret"></b></a>
-                  <!-- Dropdown Menu -->
-                  <ul class="dropdown-menu dropdown-menu-mm dropdown-menu-persist">
-                    <li class="row">
-                      <ul class="col-md-6">
-                        <li class="dropdown-header">Websites and Apps</li>
-                        <li><a href="#">Analysis and Planning</a></li>
-                        <li><a href="#">User Experience / Information Architecture</a></li>
-                        <li><a href="#">User Interface Design / UI Design</a></li>
-                        <li><a href="#">Code &amp; Development / Implementation &amp; Support</a></li>
-                      </ul>
-                      <ul class="col-md-6">
-                        <li class="dropdown-header">Enterprise solutions</li>
-                        <li><a href="#">Business Analysis</a></li>
-                        <li><a href="#">Custom UX Consulting</a></li>
-                        <li><a href="#">Quality Assurance</a></li>
-                      </ul>
-                    </li>
-                    <li class="dropdown-footer">
-                      <div class="row">
-                        <div class="col-md-7">Like the lite version? <strong>Get the extended version of Flexor.</strong></div>
-                        <div class="col-md-5">
-                          <a href="https://bootstrapmade.com" class="btn btn-more btn-lg pull-right"><i class="fa fa-cloud-download"></i> Get It Now</a>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-            
-            <!--/.navbar-collapse -->
-          </div>
-        </div>
-      </div>
-    </div>
-    
+     <%@include file="cabecera.html"%>
     <!-- ======== @Region: #content ======== -->
    <div id="content">
       <!-- Mission Statement -->
@@ -185,14 +79,7 @@
             
         
         </div>
-        <div class="well well-sm">
-	        <strong>Category Title</strong>
-	        <div class="btn-group">
-	            <a href="#" id="list" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-th-list">
-	            </span>List</a> <a href="#" id="grid" class="btn btn-default btn-sm">
-	            <spanclass="glyphicon glyphicon-th"></span>Grid</a>
-	        </div>
-    	</div>
+        
     	<div id="products" class="row list-group">
     	
     	<c:forEach var="producto" items="${productos}">
@@ -229,67 +116,7 @@ Usage: data-block-bg-img="IMAGE-URL" to apply a background image clearly via jQu
     <!-- /content -->
     <!-- Call out block -->
     <!-- ======== @Region: #footer ======== -->
-    <footer id="footer" class="block block-bg-grey-dark" data-block-bg-img="img/bg_footer-map.png" data-stellar-background-ratio="0.4">
-      <div class="container">
-        
-        <div class="row" id="contact">
-          
-          <div class="col-md-3">
-            <address>
-              <strong>Flexor Bootstrap Theme Inc</strong>
-              <br>
-              <i class="fa fa-map-pin fa-fw text-primary"></i> Sunshine House, Sunville. SUN12
-              <br>
-              <i class="fa fa-phone fa-fw text-primary"></i> 019223 8092344
-              <br>
-              <i class="fa fa-envelope-o fa-fw text-primary"></i> info@flexorinc.com
-              <br>
-            </address>
-          </div>
-          
-          <div class="col-md-3">
-            <h4 class="text-uppercase">
-              Follow Us On:
-            </h4>
-            <!--social media icons-->
-            <div class="social-media social-media-stacked">
-              <!--@todo: replace with company social media details-->
-              <a href="#"><i class="fa fa-twitter fa-fw"></i> Twitter</a>
-              <a href="#"><i class="fa fa-facebook fa-fw"></i> Facebook</a>
-              <a href="#"><i class="fa fa-linkedin fa-fw"></i> LinkedIn</a>
-              <a href="#"><i class="fa fa-google-plus fa-fw"></i> Google+</a>
-            </div>
-          </div>
-          
-        </div>
-        
-        <div class="row subfooter">
-          <!--@todo: replace with company copyright details-->
-          <div class="col-md-7">
-            <p>Copyright © Flexor Theme</p>
-            <div class="credits">
-              <!-- 
-                All the links in the footer should remain intact. 
-                You can delete the links only if you purchased the pro version.
-                Licensing information: https://bootstrapmade.com/license/
-                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Flexor
-              -->
-              <a href="https://bootstrapmade.com/">Free Bootstrap Themes</a> by BootstrapMade.com
-            </div>
-          </div>
-          <div class="col-md-5">
-            <ul class="list-inline pull-right">
-              <li><a href="#">Terms</a></li>
-              <li><a href="#">Privacy</a></li>
-              <li><a href="#">Contact Us</a></li>
-            </ul>
-          </div>
-        </div>
-        
-        <a href="#top" class="scrolltop">Top</a> 
-        
-      </div>
-    </footer>
+    <%@include file="pie.html" %>
     
     <!-- Required JavaScript Libraries -->
     <script src="lib/jquery/jquery.min.js"></script>

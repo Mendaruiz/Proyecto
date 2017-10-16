@@ -2,6 +2,7 @@ package control;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -69,9 +70,25 @@ public class Productos extends HttpServlet {
 				request.setAttribute("productos", listNuevos);
 				RequestDispatcher view = request.getRequestDispatcher("/listado.jsp");
 				view.forward(request, response);
+			} else if(operacion.equals("buscar")){
+				System.out.println("ENTRANDO EN BUSCAR");
+				String nombre = request.getParameter("producto");
+				List <Producto> listaBuscar = dp.buscarProdcuto(nombre);
+					for(int i = 0; i < listaBuscar.size(); i++){
+						System.out.println("Lista");
+						System.out.println(listaBuscar.get(i).toString());
+					}
+				
+		    	  if(listaBuscar!=null){
+		    	   request.setAttribute("nuevos", "por: " + nombre);
+		    	   request.setAttribute("productos", listaBuscar);
+		    	   request.getRequestDispatcher("/listado.jsp").forward(request, response);
+		    	  }else{
+		    	   PrintWriter out=response.getWriter();
+		    	   out.println("Error, no se encontro el producto.");
+		    	  }
+			
 			}
-			
-			
 			
 			
 		} catch (Exception e) {
