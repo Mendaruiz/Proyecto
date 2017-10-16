@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ tag../lib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -65,7 +65,7 @@
       <div class="mission text-center block block-pd-sm block-bg-noise">
         <div class="container">
           <h2 class="text-shadow-white">
-            We are a full digital agency based in London. We are experienced professionals in building websites, applications, mobile solutions. 
+           ADMINISTRADOR  DE LA PAGINA DE VENTA DE PRODUCTOS DEPORTIVOS . 
           </h2>
         </div>
       </div>
@@ -75,7 +75,7 @@
           <h2 class="block-title">
             Productos ${nuevos}
           </h2>
-          <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.</p>
+          <p> PRODUCTOS DEPORTIVOS</p>
             
         
         </div>
@@ -125,18 +125,17 @@ Usage: data-block-bg-img="IMAGE-URL" to apply a background image clearly via jQu
             <address>
               <strong>Flexor Bootstrap Theme Inc</strong>
               <br>
-              <i class="fa fa-map-pin fa-fw text-primary"></i> Sunshine House, Sunville. SUN12
+              <i class="fa fa-map-pin fa-fw text-primary"></i> madrid norte
+              <i class="fa fa-phone fa-fw text-primary"></i> 666000666
               <br>
-              <i class="fa fa-phone fa-fw text-primary"></i> 019223 8092344
-              <br>
-              <i class="fa fa-envelope-o fa-fw text-primary"></i> info@flexorinc.com
+              <i class="fa fa-envelope-o fa-fw text-primary"></i> info@tutiendapnline.com
               <br>
             </address>
           </div>
           
           <div class="col-md-3">
             <h4 class="text-uppercase">
-              Follow Us On:
+              NOS PUEDES SEGUIR EN :
             </h4>
             <!--social media icons-->
             <div class="social-media social-media-stacked">
