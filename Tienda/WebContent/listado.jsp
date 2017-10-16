@@ -65,7 +65,7 @@
       <div class="mission text-center block block-pd-sm block-bg-noise">
         <div class="container">
           <h2 class="text-shadow-white">
-            We are a full digital agency based in London. We are experienced professionals in building websites, applications, mobile solutions. 
+            Somos una tienda especializada en ropa de deporte ubicada en Madrid. Vendemos todo tipo de ropa deportiva, visita nuestra web y encontrarás todo lo necesario para la práctica de tu deporte favorito. 
           </h2>
         </div>
       </div>
@@ -75,7 +75,7 @@
           <h2 class="block-title">
             Productos ${nuevos}
           </h2>
-          <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.</p>
+          <p>Aquí puedes ver nuestros Productos e imágenes de estos.</p>
             
         
         </div>
