@@ -11,7 +11,8 @@
 	<a href="alta.jsp">Dar de Alta</a>
 	<br>
 	<a href="prueba.jsp">Prueba </a>
-	
+	<a href="index1.jsp">Buscar producto</a>
+	<br>
 	
 </body>
 </html>

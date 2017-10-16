@@ -1,5 +1,6 @@
 package datos;
 
+import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -8,6 +9,8 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import beans.Producto;
+
+
 
 public class DAOProducto implements I_DAOProducto {
 
@@ -87,6 +90,30 @@ public class DAOProducto implements I_DAOProducto {
         	 Logger.getLogger(DAOProducto.class.getName()).log(Level.SEVERE, null, ex);
          }
 		 return lista;
+	}
+
+	@Override
+	public Producto buscarProducto(String p_nombre) {
+		// TODO Auto-generated method stub
+		Producto bproducto=null;
+		Statement st = null;
+        ResultSet rs = null;
+		  try{
+		   ConexionDB con = new ConexionDB();
+		   st = con.getConnection().createStatement();
+		   
+		    rs=st.executeQuery("Select * from productos where p_nombre = '"+p_nombre+"'");
+		   while(rs.next()){
+		    bproducto = new Producto( rs.getString("p_nombre"),  rs.getString("p_marca"),rs.getString("p_descripcion"),rs.getDouble("p_preciounit"), rs.getInt("p_existencia"),rs.getString("imagen"));
+		   }
+		   rs.close();
+		   st.close();
+		  }catch(SQLException se){
+		   se.printStackTrace();
+		  }
+		  return bproducto;
+		 
+		
 	}
 
 }

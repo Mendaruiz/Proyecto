@@ -2,6 +2,7 @@ package control;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,6 +20,7 @@ import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
 
 import beans.Producto;
+
 import datos.DAOProducto;
 
 /**
@@ -43,6 +45,7 @@ public class Productos extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		String operacion;
+		System.out.println("ENTRANDO EN el servlet");
 		try{
 			operacion = request.getParameter("operacion");
 			DAOProducto dp = new DAOProducto();
@@ -69,6 +72,21 @@ public class Productos extends HttpServlet {
 				request.setAttribute("productos", listNuevos);
 				RequestDispatcher view = request.getRequestDispatcher("/listado.jsp");
 				view.forward(request, response);
+			} else if(operacion.equals("buscar")){
+				System.out.println("ENTRANDO EN BUSCAR");
+				String p_nombre=request.getParameter("producto");
+		    	  System.out.println(p_nombre);
+		    	  DAOProducto d = new DAOProducto();
+		    	  Producto bproducto=d.buscarProducto(p_nombre);
+		    	  System.out.println(bproducto);
+		    	  if(bproducto!=null){
+		    	   request.setAttribute("bproducto", bproducto);
+		    	   request.getRequestDispatcher("/mostrar.jsp").forward(request, response);
+		    	  }else{
+		    	   PrintWriter out=response.getWriter();
+		    	   out.println("Error, no se encontro el producto.");
+		    	  }
+				
 			}
 			
 			
