@@ -62,321 +62,35 @@
       <div class="mission text-center block block-pd-sm block-bg-noise">
         <div class="container">
           <h2 class="text-shadow-white">
-            We are a full digital agency based in London. We are experienced professionals in building websites, applications, mobile solutions. 
-            <a href="about.html" class="btn btn-more"><i class="fa fa-plus"></i>Read more</a>
+            En nuestra tienda podrá encontrar todo tipo de ofertas.  
           </h2>
-        </div>
-      </div>
-      <!--Showcase-->
-      <div class="showcase block block-border-bottom-grey">
-        <div class="container">
-          <h2 class="block-title">
-            Showcase
-          </h2>
-          <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.</p>
-          <div class="item-carousel" data-toggle="owlcarousel" data-owlcarousel-settings='{"items":4, "pagination":false, "navigation":true, "itemsScaleUp":true}'>
-            <div class="item">
-              <a href="#" class="overlay-wrapper">
-                <img src="img/showcase/project1.png" alt="Project 1 image" class="img-responsive underlay">
-                <span class="overlay">
-                  <span class="overlay-content"> <span class="h4">Project 1</span> </span>
-                </span>
-              </a>
-              <div class="item-details bg-noise">
-                <h4 class="item-title">
-                  <a href="#">Project 1</a>
-                </h4>
-                <a href="#" class="btn btn-more"><i class="fa fa-plus"></i>Read more</a>
-              </div>
-            </div>
-            <div class="item">
-              <a href="#" class="overlay-wrapper">
-                <img src="img/showcase/project2.png" alt="Project 2 image" class="img-responsive underlay">
-                <span class="overlay">
-                  <span class="overlay-content"> <span class="h4">Project 2</span> </span>
-                </span>
-              </a>
-              <div class="item-details bg-noise">
-                <h4 class="item-title">
-                  <a href="#">Project 2</a>
-                </h4>
-                <a href="#" class="btn btn-more"><i class="fa fa-plus"></i>Read more</a>
-              </div>
-            </div>
-            <div class="item">
-              <a href="#" class="overlay-wrapper">
-                <img src="img/showcase/project3.png" alt="Project 3 image" class="img-responsive underlay">
-                <span class="overlay">
-                  <span class="overlay-content"> <span class="h4">Project 3</span> </span>
-                </span>
-              </a>
-              <div class="item-details bg-noise">
-                <h4 class="item-title">
-                  <a href="#">Project 3</a>
-                </h4>
-                <a href="#" class="btn btn-more"><i class="fa fa-plus"></i>Read more</a>
-              </div>
-            </div>
-            <div class="item">
-              <a href="#" class="overlay-wrapper">
-                <img src="img/showcase/project4.png" alt="Project 4 image" class="img-responsive underlay">
-                <span class="overlay">
-                  <span class="overlay-content"> <span class="h4">Project 4</span> </span>
-                </span>
-              </a>
-              <div class="item-details bg-noise">
-                <h4 class="item-title">
-                  <a href="#">Project 4</a>
-                </h4>
-                <a href="#" class="btn btn-more"><i class="fa fa-plus"></i>Read more</a>
-              </div>
-            </div>
-            <div class="item">
-              <a href="#" class="overlay-wrapper">
-                <img src="img/showcase/project5.png" alt="Project 5 image" class="img-responsive underlay">
-                <span class="overlay">
-                  <span class="overlay-content"> <span class="h4">Project 5</span> </span>
-                </span>
-              </a>
-              <div class="item-details bg-noise">
-                <h4 class="item-title">
-                  <a href="#">Project 5</a>
-                </h4>
-                <a href="#" class="btn btn-more"><i class="fa fa-plus"></i>Read more</a>
-              </div>
-            </div>
-            <div class="item">
-              <a href="#" class="overlay-wrapper">
-                <img src="img/showcase/project6.png" alt="Project 6 image" class="img-responsive underlay">
-                <span class="overlay">
-                  <span class="overlay-content"> <span class="h4">Project 6</span> </span>
-                </span>
-              </a>
-              <div class="item-details bg-noise">
-                <h4 class="item-title">
-                  <a href="#">Project 6</a>
-                </h4>
-                <a href="#" class="btn btn-more"><i class="fa fa-plus"></i>Read more</a>
-              </div>
-            </div>
-            <div class="item">
-              <a href="#" class="overlay-wrapper">
-                <img src="img/showcase/project7.png" alt="Project 7 image" class="img-responsive underlay">
-                <span class="overlay">
-                  <span class="overlay-content"> <span class="h4">Project 7</span> </span>
-                </span>
-              </a>
-              <div class="item-details bg-noise">
-                <h4 class="item-title">
-                  <a href="#">Project 7</a>
-                </h4>
-                <a href="#" class="btn btn-more"><i class="fa fa-plus"></i>Read more</a>
-              </div>
-            </div>
-            <div class="item">
-              <a href="#" class="overlay-wrapper">
-                <img src="img/showcase/project8.png" alt="Project 8 image" class="img-responsive underlay">
-                <span class="overlay">
-                  <span class="overlay-content"> <span class="h4">Project 8</span> </span>
-                </span>
-              </a>
-              <div class="item-details bg-noise">
-                <h4 class="item-title">
-                  <a href="#">Project 8</a>
-                </h4>
-                <a href="#" class="btn btn-more"><i class="fa fa-plus"></i>Read more</a>
-              </div>
-            </div>
-            <div class="item">
-              <a href="#" class="overlay-wrapper">
-                <img src="img/showcase/project9.png" alt="Project 9 image" class="img-responsive underlay">
-                <span class="overlay">
-                  <span class="overlay-content"> <span class="h4">Project 9</span> </span>
-                </span>
-              </a>
-              <div class="item-details bg-noise">
-                <h4 class="item-title">
-                  <a href="#">Project 9</a>
-                </h4>
-                <a href="#" class="btn btn-more"><i class="fa fa-plus"></i>Read more</a>
-              </div>
-            </div>
-            <div class="item">
-              <a href="#" class="overlay-wrapper">
-                <img src="img/showcase/project10.png" alt="Project 10 image" class="img-responsive underlay">
-                <span class="overlay">
-                  <span class="overlay-content"> <span class="h4">Project 10</span> </span>
-                </span>
-              </a>
-              <div class="item-details bg-noise">
-                <h4 class="item-title">
-                  <a href="#">Project 10</a>
-                </h4>
-                <a href="#" class="btn btn-more"><i class="fa fa-plus"></i>Read more</a>
-              </div>
-            </div>
-            <div class="item">
-              <a href="#" class="overlay-wrapper">
-                <img src="img/showcase/project11.png" alt="Project 11 image" class="img-responsive underlay">
-                <span class="overlay">
-                  <span class="overlay-content"> <span class="h4">Project 11</span> </span>
-                </span>
-              </a>
-              <div class="item-details bg-noise">
-                <h4 class="item-title">
-                  <a href="#">Project 11</a>
-                </h4>
-                <a href="#" class="btn btn-more"><i class="fa fa-plus"></i>Read more</a>
-              </div>
-            </div>
-            <div class="item">
-              <a href="#" class="overlay-wrapper">
-                <img src="img/showcase/project12.png" alt="Project 12 image" class="img-responsive underlay">
-                <span class="overlay">
-                  <span class="overlay-content"> <span class="h4">Project 12</span> </span>
-                </span>
-              </a>
-              <div class="item-details bg-noise">
-                <h4 class="item-title">
-                  <a href="#">Project 12</a>
-                </h4>
-                <a href="#" class="btn btn-more"><i class="fa fa-plus"></i>Read more</a>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
       <!-- Services -->
       <div class="services block block-bg-gradient block-border-bottom">
         <div class="container">
           <h2 class="block-title">
-            Our Services
+            Nuestros servicios
           </h2>
           <div class="row">
-            <div class="col-md-4 text-center">
+            <div class="col-md-6 text-center">
               <span class="fa-stack fa-5x">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-group fa-stack-1x fa-inverse"></i> </span>
               <h4 class="text-weight-strong">
-                User Experience / Information Architecture
+                Comunidad
               </h4>
-              <p>Rhoncus adipiscing, magna integer cursus augue eros lacus porttitor magna. Dictumst, odio! Elementum tortor sociis in eu dis dictumst pulvinar lorem nec aliquam a nascetur.</p>
-              <p>
-                <a href="#" class="btn btn-more i-right">Learn More <i class="fa fa-angle-right"></i></a>
-              </p>
+              <p>Queremos formar una amplia comunidad de clientes que con sus comentarios
+              nos ayuden a tener un buen feedback para dar un mejor servicio.</p>
             </div>
             <div class="col-md-4 text-center">
               <span class="fa-stack fa-5x">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-pencil fa-stack-1x fa-inverse"></i> </span>
               <h4 class="text-weight-strong">
-                User Interface Design / User Interface Theming
+                Servicio Postventa
               </h4>
-              <p>Rhoncus adipiscing, magna integer cursus augue eros lacus porttitor magna. Dictumst, odio! Elementum tortor sociis in eu dis dictumst pulvinar lorem nec aliquam a nascetur.</p>
-              <p>
-                <a href="#" class="btn btn-more i-right">Learn More <i class="fa fa-angle-right"></i></a>
-              </p>
-            </div>
-            <div class="col-md-4 text-center">
-              <span class="fa-stack fa-5x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-cogs fa-stack-1x fa-inverse"></i> </span>
-              <h4 class="text-weight-strong">
-                Code &amp; Development / Implementation Support
-              </h4>
-              <p>Rhoncus adipiscing, magna integer cursus augue eros lacus porttitor magna. Dictumst, odio! Elementum tortor sociis in eu dis dictumst pulvinar lorem nec aliquam a nascetur.</p>
-              <p>
-                <a href="#" class="btn btn-more i-right">Learn More <i class="fa fa-angle-right"></i></a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Pricing -->
-      <div class="block-contained">
-        <h2 class="block-title">
-          Our Plans
-        </h2>
-        <div class="row">
-          <div class="col-md-3">
-            <div class="panel panel-default panel-pricing text-center">
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  Flex<em>Starter</em>
-                </h4>
-              </div>
-              <div class="panel-pricing-price">$ <span class="digits">19.95</span> /mo.</div>
-              <div class="panel-body">
-                <ul class="list-dotted">
-                  <li>3 User Accounts</li>
-                  <li>3 Private Projects</li>
-                  <li>Umlimited Projects</li>
-                  <li>5GB of space</li>
-                </ul>
-                <a href="#" class="btn btn-primary btn-sm">Choose Plan</a>
-
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="panel panel-default panel-pricing panel-pricing-highlighted text-center">
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  Team<em>Starter</em>
-                </h4>
-              </div>
-              <div class="panel-pricing-price">$ <span class="digits">49.95</span> /mo.</div>
-              <div class="panel-body">
-                <ul class="list-dotted">
-                  <li>50 User Accounts</li>
-                  <li>50 Private Projects</li>
-                  <li>Umlimited Projects</li>
-                  <li>Unlimited space</li>
-                </ul>
-                <a href="#" class="btn btn-primary btn-sm">Choose Plan</a>
-
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 text-center">
-            <div class="panel panel-default panel-pricing panel-pricing-highlighted text-center">
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  Enterprise 
-                  <span class="panel-pricing-popular"><i class="fa fa-thumbs-up"></i> Popular</span>
-                </h4>
-              </div>
-              <div class="panel-pricing-price">$ <span class="digits">199.95</span> /mo.</div>
-              <div class="panel-body">
-                <ul class="list-dotted">
-                  <li>100 User Accounts</li>
-                  <li>100 Private Projects</li>
-                  <li>Umlimited Projects</li>
-                  <li>Unlimited space</li>
-                </ul>
-                <a href="#" class="btn btn-primary btn-sm">Choose Plan</a>
-
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 text-center">
-            <div class="panel panel-default panel-pricing text-center">
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  Corporate
-                </h4>
-              </div>
-              <div class="panel-pricing-price">$ <span class="digits">299.95</span> /mo.</div>
-              <div class="panel-body">
-                <ul class="list-dotted">
-                  <li>1000 User Accounts</li>
-                  <li>1000 Private Projects</li>
-                  <li>Umlimited Projects</li>
-                  <li>Unlimited space</li>
-                </ul>
-                <a href="#" class="btn btn-primary btn-sm">Choose Plan</a>
-
-              </div>
+              <p>Queremos que nuestros clientes estén siempre contentos, por eso ofrecemos un servicio postventa.</p>
             </div>
           </div>
         </div>
@@ -390,11 +104,8 @@ Usage: data-block-bg-img="IMAGE-URL" to apply a background image clearly via jQu
           <span data-counter-up>100,000,0</span>s
         </h2>
         <h3 class="h-lg m-t-0 m-b-lg">
-          Of Happy Customers!
+          ¡De clientes contentos!
         </h3>
-        <p>
-          <a href="#" class="btn btn-more btn-lg i-right">Join them today! <i class="fa fa-angle-right"></i></a>
-        </p>
       </div>
       <!--Customer testimonial & Latest Blog posts-->
       <div class="testimonials block-contained">
@@ -402,115 +113,21 @@ Usage: data-block-bg-img="IMAGE-URL" to apply a background image clearly via jQu
           <!--Customer testimonial-->
           <div class="col-md-6 m-b-lg">
             <h3 class="block-title">
-              Testimonials
+              Comentarios
             </h3>
             <blockquote>
-              <p>Our productivity &amp; sales are up! Customers are happy &amp; we couldn't be happier with this product!</p>
+              <p>Yo la verdad es que estoy muy contento con esta gente! :)</p>
               <img src="img/misc/charles-quote.png" alt="Charles Spencer Chaplin">
               <small>
-                <strong>Charles Chaplin</strong>
-                <br>
-                British comic actor
+                <strong>Carlillos</strong>
               </small>
             </blockquote>
-          </div>
-          <!--Latest Blog posts-->
-          <div class="col-md-6 blog-roll">
-            <h3 class="block-title">
-              Latest From Our Blog
-            </h3>
-            <!-- Blog post 1-->
-            <div class="media">
-              <div class="media-left hidden-xs">
-                <!-- Date desktop -->
-                <div class="date-wrapper"> <span class="date-m">Feb</span> <span class="date-d">01</span> </div>
-              </div>
-              <div class="media-body">
-                <h4 class="media-heading">
-                  <a href="#" class="text-weight-strong">amet urna integer urna enim, sit arcu pid in nec?</a>
-                </h4>
-                <!-- Meta details mobile -->
-                <ul class="list-inline meta text-muted visible-xs">
-                  <li><i class="fa fa-calendar"></i> <span class="visible-md">Created:</span> Fri 1st Feb 2013</li>
-                  <li><i class="fa fa-user"></i> <a href="#">Joe</a></li>
-                </ul>
-                <p>
-                  Ut <strong>commodo ullamcorper risus nec</strong> mattis. Morbi tincidunt posuere turpis eu laoreet. Nulla facilisi. Aenean at massa leo. Vestibulum in varius arcu. 
-                  <a href="#">Read more <i class="fa fa-angle-right"></i></a>
-                </p>
-              </div>
-            </div>
-            <!-- Blog post 2 -->
-            <div class="media">
-              <div class="media-left hidden-xs">
-                <!-- Date desktop -->
-                <div class="date-wrapper"> <span class="date-m">Jan</span> <span class="date-d">17</span> </div>
-              </div>
-              <div class="media-body">
-                <h4 class="media-heading">
-                  <a href="#" class="text-weight-strong">a nec in sed hac ultrices cursus</a>
-                </h4>
-                <!-- Meta details mobile -->
-                <ul class="list-inline meta text-muted visible-xs">
-                  <li><i class="fa fa-calendar"></i> <span class="visible-md">Created:</span> Thu 17th Jan 2013</li>
-                  <li><i class="fa fa-user"></i> <a href="#">Joe</a></li>
-                </ul>
-                <p>
-                  Nam risus magna, fringilla sit amet blandit viverra, dignissim eget est. Aenean at massa leo. Vestibulum in varius arcu. 
-                  <a href="#">Read more <i class="fa fa-angle-right"></i></a>
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </div>
     </div>
     <!-- /content -->
-    <!-- Call out block -->
-    <div class="block block-pd-sm block-bg-primary">
-      <div class="container">
-        <div class="row">
-          <h3 class="col-md-4">
-            Some of our Clients
-          </h3>
-          <div class="col-md-8">
-            <div class="row">
-              <!--Client logos should be within a 120px wide by 60px height image canvas-->
-              <div class="col-xs-6 col-md-2">
-                <a href="https://bootstrapmade.com" title="Client 1">
-                  <img src="img/clients/client1.png" alt="Client 1 logo" class="img-responsive">
-                </a>
-              </div>
-              <div class="col-xs-6 col-md-2">
-                <a href="https://bootstrapmade.com" title="Client 2">
-                  <img src="img/clients/client2.png" alt="Client 2 logo" class="img-responsive">
-                </a>
-              </div>
-              <div class="col-xs-6 col-md-2">
-                <a href="https://bootstrapmade.com" title="Client 3">
-                  <img src="img/clients/client3.png" alt="Client 3 logo" class="img-responsive">
-                </a>
-              </div>
-              <div class="col-xs-6 col-md-2">
-                <a href="https://bootstrapmade.com" title="Client 4">
-                  <img src="img/clients/client4.png" alt="Client 4 logo" class="img-responsive">
-                </a>
-              </div>
-              <div class="col-xs-6 col-md-2">
-                <a href="https://bootstrapmade.com" title="Client 5">
-                  <img src="img/clients/client5.png" alt="Client 5 logo" class="img-responsive">
-                </a>
-              </div>
-              <div class="col-xs-6 col-md-2">
-                <a href="https://bootstrapmade.com" title="Client 6">
-                  <img src="img/clients/client6.png" alt="Client 6 logo" class="img-responsive">
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+
     
     <!-- ======== @Region: #footer ======== -->
     <%@include file="pie.html" %>
