@@ -85,7 +85,7 @@
     	<c:forEach var="producto" items="${productos}">
 	        <div class="item  col-xs-4 col-lg-4">
 	            <div class="thumbnail">
-	                <img class="group list-group-image" src="img/showcase/project12.png" alt="" />
+	                <img class="group list-group-image" src="../img/showcase/project12.png" alt="" />
 	                <div class="caption">
 	                    <h4 class="group inner list-group-item-heading">
 	                        ${producto.nombre}</h4>

@@ -93,7 +93,7 @@ Usage: data-block-bg-img="IMAGE-URL" to apply a background image clearly via jQu
     <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
     <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="../lib/stellar/stellar.min.js"></script>
-    <script src="../llib/waypoints/waypoints.min.js"></script>
+    <script src="../lib/waypoints/waypoints.min.js"></script>
     <script src="../lb/counterup/counterup.min.js"></script>
     <script src="../lib/contactform/contactform.js"></script>
     
