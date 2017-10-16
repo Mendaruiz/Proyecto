@@ -40,7 +40,7 @@
     <link href="../lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="../lib/owlcarousel/owl.carousel.min.css" rel="stylesheet">
     <link href="../lib/owlcarousel/owl.theme.min.css" rel="stylesheet">
-    <link href="../lib/owlcarousel/owl.transitions.min.css" rel="stylesheet">
+    <link href="../lib/owlcarousel/owl.transitions.min.css" rel="stylesheet ">
     
     <!-- Main Stylesheet File -->
     <link href="../css/style.css" rel="stylesheet">
