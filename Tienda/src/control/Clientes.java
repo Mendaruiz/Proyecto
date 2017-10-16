@@ -31,7 +31,7 @@ public class Clientes extends HttpServlet {
 		
 		try{
 			/* Funciona
-			operacion = request.getParameter("operacion");
+			operacion = request.getParameter("operacion");aaa
 			DAOCliente op = new DAOCliente();
 			System.out.println("---- operacion: "+operacion);
 			
